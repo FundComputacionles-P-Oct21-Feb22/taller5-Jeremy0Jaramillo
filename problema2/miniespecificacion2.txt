@@ -6,7 +6,7 @@
 2.cantidad, d[0,n]
 3.precioU, d[0,n]
 4.valorTotal, d[0,n]
-5.porcentaje, d[0,n] <--- 15
+5.porcentaje, d[0,n]
 6.descuento, d[0,n]
 
 4.<< "Ingrese el nombre del artículo"
@@ -23,11 +23,21 @@
 8.valorTotal <--- cantidad * precioU
 
 
-9.Si cantidad > 50 entonces
+9.Si cantidad = 20 OR cantidad = 10
 
-  	10.descuento <--- (porcentaje * valorTotal)/100
+	10. porcentaje <-- 15
 
-  	11.valorTotal <--- valortTotal - descuento
+  	10.descuento <-- (porcentaje * valorTotal)/100
+
+  	11.valorTotal <-- valortTotal - descuento
+
+12.Caso contrario
+
+	13. porcentaje <-- 10
+
+  	14.descuento <-- (porcentaje * valorTotal)/100
+
+  	15.valorTotal <-- valortTotal - descuento
 
 12.Fin si
 
@@ -36,4 +46,3 @@
 
 
 14.Fin
-  

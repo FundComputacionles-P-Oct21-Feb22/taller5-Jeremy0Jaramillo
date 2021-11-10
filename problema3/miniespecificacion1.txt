@@ -1,0 +1,24 @@
+1.Inicio
+
+2.gradosC, d[0,n]
+3.gradosF, d[0,n]
+4.gradosK, d[0,n]
+
+5.<< "Ingrese los C°"
+6.>> gradosC
+
+7.Si gradosC <= 100 y gradosC > 0 entonces
+  
+  8.<< "El valor escrito excede el límite"
+  
+
+  9.Caso contrario
+  
+	10.gradosF <-- (gradosC * 9/5) + 32
+	11.gradosK <-- gradosC + 273.15
+
+	12.<< "Grados farenheit =" + gradosF
+	13.<< "Grados Kelvin =" + gradosK
+14.Fin si
+
+15.Fin
