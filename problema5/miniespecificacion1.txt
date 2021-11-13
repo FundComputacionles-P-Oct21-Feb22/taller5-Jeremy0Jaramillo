@@ -1,0 +1,38 @@
+1.Inicio
+
+2.edad, i[0,n]
+2.numerolitrosmes, d[0,n]
+3.costolitro, d[0,n]
+4.numerominutomes, d[0,n]
+5.costominuto, d[0,n]
+6.porcentaje <-- 20
+7.descuento, d[0,n]
+8.totalpagarA, d[0,n]
+9.totalpagarT, d[0,n]
+10.totalpagarS, d[0,n]
+
+11. << "Ingrese el número de litros de agua consumidos en el mes"
+12. >> númerolitrosmes
+
+13. << "Ingrese el costo por litro de agua"
+14. >> costolitro
+
+15. << "Ingrese el número de minutos gastados en el mes"
+15. >> numerominutosmes
+
+17. << "Ingrese el costo por minuto"
+18. >> costominuto
+
+19. totalpagarA <-- numerolitrosmes * costolitro
+20. totalpagarT <-- numerominutosmes * costominuto
+21. totalpagarS <-- totalpagarA + totalpagarT
+
+21.Si (edad > 20) entonces
+	22. descuento <-- (totalpagarS * porcentaje)/100
+	23. totalpagarS <-- totalpagarS - descuento
+
+26.Fin Si
+
+27. << "El total por pagar por servicios básicos en este mes es de:", totalpagarS
+
+28.Fin

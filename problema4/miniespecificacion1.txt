@@ -1,0 +1,42 @@
+1.Inicio
+
+2.numerodias, i[0,n]
+3.preciohabitacion, d[0,n]
+4.subtotal, d[0,n]
+5.descuento1, d[0,n]
+6.porcentaje1 <-- 10
+7.porcentaje2 <-- 15
+8.porcentaje3 <-- 20
+9.totalpagar <-- 0
+
+10. << "Ingrese el número de días en la hostería"
+11. >> numerodias
+
+12. << "Ingrese el precio de la habitación"
+13. >> preciohabitacion
+
+14. subtotal <-- preciohabitacion * numerodias
+
+15. Si (numerodias > 5 AND numerodias <= 10) entonces
+	16.descuento1 = (porcentaje1 * subtotal)/100
+	17.totalpagar = subtotal - descuento1
+	
+	18.Caso contrario
+		19. Si (numerodias > 10 AND numerodias <= 15) entonces
+		20.descuento1 = (porcentaje2 * subtotal)/100
+		21.totalpagar = subtotal - descuento1
+		
+		22.Caso contrario
+			23. Si (numerodias > 15 AND numerodias <= 20) entonces
+			24.descuento1 = (porcentaje3 * subtotal)/100
+			25.totalpagar = subtotal - descuento1
+				
+				26.Caso contrario
+					27. Si (numerodias < 5) entonces
+					28. totalpagar = subtotal
+
+29. Fin Si
+
+30. << "El total por pagar es:", totalpagar
+
+31.Fin
